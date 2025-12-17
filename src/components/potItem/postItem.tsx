@@ -1,14 +1,6 @@
 import classes from "./postItem.module.css"
 import { Link } from "react-router-dom";
-
-type Post = {
-  id: number
-  title: string
-  thumbnailUrl: string
-  createdAt: string
-  categories: string[]
-  content: string
-}
+import { Post } from "../../types/Post";
 
 type PostItemProps = {
   post : Post

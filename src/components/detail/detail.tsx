@@ -2,15 +2,7 @@ import { useParams } from "react-router-dom";
 import classes from "./detail.module.css";
 import { posts_URL } from "../../data/posts";
 import { useState, useEffect } from "react";
-
-type Post = {
-    id: number
-  title: string
-  thumbnailUrl: string
-  createdAt: string
-  categories: string[]
-  content: string
-}
+import { Post } from "../../types/Post";
 
 export default function Detail() {
   const { id } = useParams<{id:string}>();
