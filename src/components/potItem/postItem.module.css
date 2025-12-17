@@ -1,0 +1,23 @@
+.linkwap {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.article {
+  border: solid;
+  border-color: #3e3f3f41;
+  border-width: 1px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  /* 左右に分ける */
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #555;
+}

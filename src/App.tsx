@@ -1,24 +1,21 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import './App.css';
+import Post from './post';
+import Inquiry from './components/inquiry/inquiry';
+import { Route, Routes } from 'react-router-dom';
+import Detail from './components/detail/detail';
+import Header from './components/header/header';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+
+      <Routes>
+        <Route path="/" element={<Post />} />
+        <Route path="/inquiry" element={<Inquiry />} />
+        <Route path="/posts/:id" element={<Detail />} />
+      </Routes>
+
     </div>
   );
 }
